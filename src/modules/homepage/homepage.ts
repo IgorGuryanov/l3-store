@@ -19,7 +19,7 @@ class Homepage extends Component {
       headers: {
         'x-userid': window.userId,
       }
-  })
+   })
       .then((res) => res.json())
       .then((products) => {
         this.popularProducts.update(products);
